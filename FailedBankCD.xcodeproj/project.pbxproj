@@ -7,11 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5501593F1A6451B500FEE0AF /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5501593E1A6451B500FEE0AF /* MasterViewController.m */; };
 		550CFEB71A644B7300163606 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 550CFEB61A644B7300163606 /* main.m */; };
 		550CFEBA1A644B7300163606 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 550CFEB91A644B7300163606 /* AppDelegate.m */; };
 		550CFEBD1A644B7300163606 /* FailedBankCD.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 550CFEBB1A644B7300163606 /* FailedBankCD.xcdatamodeld */; };
-		550CFEC01A644B7300163606 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 550CFEBF1A644B7300163606 /* MasterViewController.m */; };
-		550CFEC31A644B7300163606 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 550CFEC21A644B7300163606 /* DetailViewController.m */; };
 		550CFEC61A644B7300163606 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 550CFEC41A644B7300163606 /* Main.storyboard */; };
 		550CFEC81A644B7300163606 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 550CFEC71A644B7300163606 /* Images.xcassets */; };
 		550CFECB1A644B7300163606 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 550CFEC91A644B7300163606 /* LaunchScreen.xib */; };
@@ -29,16 +28,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5501593D1A6451B500FEE0AF /* MasterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
+		5501593E1A6451B500FEE0AF /* MasterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
 		550CFEB11A644B7300163606 /* FailedBankCD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FailedBankCD.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		550CFEB51A644B7300163606 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		550CFEB61A644B7300163606 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		550CFEB81A644B7300163606 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		550CFEB91A644B7300163606 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		550CFEBC1A644B7300163606 /* FailedBankCD.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FailedBankCD.xcdatamodel; sourceTree = "<group>"; };
-		550CFEBE1A644B7300163606 /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
-		550CFEBF1A644B7300163606 /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
-		550CFEC11A644B7300163606 /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
-		550CFEC21A644B7300163606 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		550CFEC51A644B7300163606 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		550CFEC71A644B7300163606 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		550CFECA1A644B7300163606 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -88,15 +85,13 @@
 			children = (
 				550CFEB81A644B7300163606 /* AppDelegate.h */,
 				550CFEB91A644B7300163606 /* AppDelegate.m */,
-				550CFEBE1A644B7300163606 /* MasterViewController.h */,
-				550CFEBF1A644B7300163606 /* MasterViewController.m */,
-				550CFEC11A644B7300163606 /* DetailViewController.h */,
-				550CFEC21A644B7300163606 /* DetailViewController.m */,
 				550CFEC41A644B7300163606 /* Main.storyboard */,
 				550CFEC71A644B7300163606 /* Images.xcassets */,
 				550CFEC91A644B7300163606 /* LaunchScreen.xib */,
 				550CFEBB1A644B7300163606 /* FailedBankCD.xcdatamodeld */,
 				550CFEB41A644B7300163606 /* Supporting Files */,
+				5501593D1A6451B500FEE0AF /* MasterViewController.h */,
+				5501593E1A6451B500FEE0AF /* MasterViewController.m */,
 			);
 			path = FailedBankCD;
 			sourceTree = "<group>";
@@ -227,8 +222,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				550CFEC31A644B7300163606 /* DetailViewController.m in Sources */,
-				550CFEC01A644B7300163606 /* MasterViewController.m in Sources */,
+				5501593F1A6451B500FEE0AF /* MasterViewController.m in Sources */,
 				550CFEBD1A644B7300163606 /* FailedBankCD.xcdatamodeld in Sources */,
 				550CFEBA1A644B7300163606 /* AppDelegate.m in Sources */,
 				550CFEB71A644B7300163606 /* main.m in Sources */,
@@ -424,6 +418,7 @@
 				550CFEDC1A644B7300163606 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		550CFEDD1A644B7300163606 /* Build configuration list for PBXNativeTarget "FailedBankCDTests" */ = {
 			isa = XCConfigurationList;
@@ -432,6 +427,7 @@
 				550CFEDF1A644B7300163606 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
