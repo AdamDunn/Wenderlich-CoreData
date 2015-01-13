@@ -7,6 +7,7 @@
 //
 
 #import "MasterViewController.h"
+#import "FailedBankInfo.h"
 
 @interface MasterViewController ()
 
@@ -15,6 +16,7 @@
 @implementation MasterViewController
 
 @synthesize managedObjectContext;
+@synthesize failedBankInfos;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -24,6 +26,13 @@
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    
+    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
+    NSEntityDescription *entity = [NSEntityDescription entityForName:@"FailedBankInfo" inManagedObjectContext:managedObjectContext];
+    [fetchRequest setEntity:entity];
+    NSError *error;
+    self.failedBankInfos = [managedObjectContext executeFetchRequest:fetchRequest error:&error];
+    self.title = @"Failed Banks";
 }
 
 - (void)didReceiveMemoryWarning {
@@ -36,24 +45,28 @@
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
 #warning Potentially incomplete method implementation.
     // Return the number of sections.
-    return 0;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 #warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return 0;
+    return [failedBankInfos count];
 }
 
-/*
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
+    static NSString *CellIdentifier = @"Cell";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
     // Configure the cell...
+    FailedBankInfo *info = [failedBankInfos objectAtIndex:indexPath.row];
+    cell.textLabel.text = info.name;
+    cell.detailTextLabel.text = [NSString stringWithFormat:@"%@, %@", info.city, info.state];
     
     return cell;
 }
-*/
+
 
 /*
 // Override to support conditional editing of the table view.
