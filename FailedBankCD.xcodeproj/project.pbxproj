@@ -16,6 +16,7 @@
 		550CFEC81A644B7300163606 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 550CFEC71A644B7300163606 /* Images.xcassets */; };
 		550CFECB1A644B7300163606 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 550CFEC91A644B7300163606 /* LaunchScreen.xib */; };
 		550CFED71A644B7300163606 /* FailedBankCDTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 550CFED61A644B7300163606 /* FailedBankCDTests.m */; };
+		552D5FB51A6715D7007C49D1 /* CoreDataTutorial2.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 552D5FB41A6715D7007C49D1 /* CoreDataTutorial2.sqlite */; };
 		555F60DD1A656D6B001343B6 /* FailedBankDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = 555F60DC1A656D6B001343B6 /* FailedBankDetails.m */; };
 /* End PBXBuildFile section */
 
@@ -45,6 +46,7 @@
 		550CFED01A644B7300163606 /* FailedBankCDTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FailedBankCDTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		550CFED51A644B7300163606 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		550CFED61A644B7300163606 /* FailedBankCDTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FailedBankCDTests.m; sourceTree = "<group>"; };
+		552D5FB41A6715D7007C49D1 /* CoreDataTutorial2.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = CoreDataTutorial2.sqlite; sourceTree = "<group>"; };
 		555F60DB1A656D6B001343B6 /* FailedBankDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FailedBankDetails.h; sourceTree = "<group>"; };
 		555F60DC1A656D6B001343B6 /* FailedBankDetails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FailedBankDetails.m; sourceTree = "<group>"; };
 		555F60DE1A6572EE001343B6 /* FailedBankInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FailedBankInfo.h; sourceTree = "<group>"; };
@@ -91,6 +93,7 @@
 			children = (
 				550CFEB81A644B7300163606 /* AppDelegate.h */,
 				550CFEB91A644B7300163606 /* AppDelegate.m */,
+				552D5FB41A6715D7007C49D1 /* CoreDataTutorial2.sqlite */,
 				550CFEC41A644B7300163606 /* Main.storyboard */,
 				550CFEC71A644B7300163606 /* Images.xcassets */,
 				550CFEC91A644B7300163606 /* LaunchScreen.xib */,
@@ -213,6 +216,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				550CFEC61A644B7300163606 /* Main.storyboard in Resources */,
+				552D5FB51A6715D7007C49D1 /* CoreDataTutorial2.sqlite in Resources */,
 				550CFECB1A644B7300163606 /* LaunchScreen.xib in Resources */,
 				550CFEC81A644B7300163606 /* Images.xcassets in Resources */,
 			);
