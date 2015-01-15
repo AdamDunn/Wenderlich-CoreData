@@ -7,10 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <CoreData/CoreData.h>
 
-@interface MasterViewController : UITableViewController
+@interface MasterViewController : UITableViewController <NSFetchedResultsControllerDelegate>
 
 @property (nonatomic, strong) NSManagedObjectContext* managedObjectContext;
-@property (nonatomic, strong) NSArray *failedBankInfos;
+@property (nonatomic, retain) NSFetchedResultsController *fetchedResultsController;
 
 @end
